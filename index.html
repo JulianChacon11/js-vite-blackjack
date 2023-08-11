@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blackjack Vite</title>
+  </head>
+  <body class="bg-[#2F4F30] text-white">
+    <header>
+      <h1 class="w-full text-center bg-black p-[20px] text-[25px]">Blackjack</h1>
+      <div class="w-full flex mt-[20px] items-center justify-center">
+          <div>
+              <button id="btn-nuevo" class="p-[10px] bg-[green] rounded-md">Nuevo Juego</button>
+              <button id="btn-pedir" class="p-[10px] bg-[blue] rounded-md" disabled>Pedir Cartas</button>
+              <button id="btn-detener" class="p-[10px] bg-[crimson] rounded-md" disabled>Detener</button>
+          </div>
+      </div>
+    </header>
+      <!-- Cartas jugador -->
+      <div class="flex">
+          <div class="h-[300px] w-full">
+              <h1 class="text-[25px]">Jugador 1- <small>0</small></h1>
+              <div id="player-cards" class="flex ml-[150px] cards-div">
+                  <!-- <img class="w-[150px] ml-[-75px]" src="./assets/cartas/2C.png"/> -->
+              </div>
+          </div>
+      </div>
+      <!-- Cartas computadora -->
+      <div class="flex mt-[30px]">
+          <div class="h-[300px] w-full">
+              <h1 class="text-[25px]">Computadora - <small>0</small></h1>
+               <div id="computer-cards" class="flex ml-[150px] cards-div">
+                  
+              </div> 
+          </div>
+      </div>
+
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
